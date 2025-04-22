@@ -1,6 +1,6 @@
-# RoomWise
+# SweetManager 
 
-**RoomWise** is a comprehensive hotel management software that streamlines operations for hotel administrators and workers. The platform allows for easy management of room details, booking processes, staff communication, and inventory supplies. RoomWise ensures efficient hotel management by assigning specific roles to administrators and workers, with a system that handles real-time notifications and task management.
+**SweetManager** is a comprehensive hotel management software that streamlines operations for hotel administrators and workers. The platform allows for easy management of room details, booking processes, staff communication, and inventory supplies. RoomWise ensures efficient hotel management by assigning specific roles to administrators and workers, with a system that handles real-time notifications and task management.
 
 ---
 
