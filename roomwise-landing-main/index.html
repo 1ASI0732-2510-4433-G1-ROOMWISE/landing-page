@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Room Wise</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Room Wise</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#conoce-mas">Conoce más</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#valores">Valores</a></li>
+          <li><a href="#colaboradores">Colaboradores</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><span class="language-selector">ES</span></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="nav-actions d-flex align-items-center">
+        <a class="btn-login me-2" href="#login">Iniciar sesión</a>
+        <a class="btn-getstarted" href="#signup">Crear cuenta</a>
+      </div>
+
+    </div>
+</header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+        <h1>Documenta todos los procesos de tu fábrica desde una misma plataforma</h1>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#registro" class="btn-get-started">Comenzar</a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Plataforma de documentación de procesos">
+      </div>
+    </div>
+  </div>
+</section><!-- /Hero Section -->
+
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Conoce Más Section -->
+<section id="conoce-mas" class="skills section light-background">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-items-center">
+        <img src="assets/img/conoce-mas.png" class="img-fluid rounded" alt="Deja atrás los registros escritos a mano">
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0 content">
+        <h2 class="text-uppercase">CONOCE MÁS</h2>
+        <h3 class="mb-4">Deja atrás a los registros escritos a mano</h3>
+        <p class="lead">
+          Bienvenido a Room Wise, la aplicación web que te permite supervisar y gestionar todos los procesos de tu fábrica de manera remota, por un bajo precio de suscripción.
+        </p>
+        <a href="#registro" class="btn-get-started mt-3">Comenzar</a>
+      </div>
+    </div>
+  </div>
+</section><!-- /Conoce Más Section -->
+
+    <!-- Services Section with Images -->
+<section id="services" class="services section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Explora todo lo que Room Wise tiene para ofrecer</h2>
+    <p>Soluciones integrales para la gestión de procesos industriales</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="service-img mb-2 d-flex justify-content-center align-items-center">
+            <img src="assets/img/procesos.png" class="img-fluid w-50" alt="Registro de procesos" class="img-fluid rounded">
+          </div>
+          <h4><a href="" class="stretched-link">Registro de procesos</a></h4>
+          <p>Registra el avance y estado de los procesos de producción en tiempo real.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="service-img mb-2 d-flex justify-content-center align-items-center">
+            <img src="assets/img/documentacion.png" class="img-fluid w-50" alt="Documentación" class="img-fluid rounded">
+          </div>
+          <h4><a href="" class="stretched-link">Documentación</a></h4>
+          <p>Centraliza toda tu información de manera rápida, organizada y segura.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="service-img mb-2 d-flex justify-content-center align-items-center">
+            <img src="assets/img/supervision.png" class="img-fluid w-50" alt="Supervisión a distancia" class="img-fluid rounded">
+          </div>
+          <h4><a href="" class="stretched-link">Supervisión a distancia</a></h4>
+          <p>Recibe información completa sobre el rendimiento de tus procesos desde cualquier lugar.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="service-img mb-2 d-flex justify-content-center align-items-center">
+            <img src="assets/img/analisis.png" class="img-fluid w-50"  alt="Análisis de estadísticas" class="img-fluid rounded">
+          </div>
+          <h4><a href="" class="stretched-link">Análisis de estadísticas</a></h4>
+          <p>Analiza y procesa la información recolectada para mejorar la toma de decisiones.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="service-img mb-2 d-flex justify-content-center align-items-center">
+            <img src="assets/img/facil.png" class="img-fluid w-50" alt="Fácil entendimiento" class="img-fluid rounded">
+          </div>
+          <h4><a href="" class="stretched-link">Fácil entendimiento</a></h4>
+          <p>Interfaz intuitiva que cualquier persona puede entender y utilizar sin dificultad.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="service-img mb-2 d-flex justify-content-center align-items-center">
+            <img src="assets/img/planes.png" class="img-fluid w-50" alt="Planes flexibles" class="img-fluid rounded" >
+          </div>
+          <h4><a href="" class="stretched-link">Planes flexibles</a></h4>
+          <p>Elige el plan que mejor se acomode a las necesidades de tu empresa.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- /Services Section -->
+    
+
+<!-- Sección MVV con cuadros de colores -->
+<section id="mision-vision" class="section py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Misión - Cuadro Verde -->
+      <div class="col-md-4">
+        <div class="mvv-card mision-card">
+          <h2>Misión</h2>
+          <div class="mvv-content">
+            <p>Revolucionar la documentación de los procesos fundamentales de las fábricas enfocadas en la producción de champiñones del Perú.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visión - Cuadro Azul -->
+      <div class="col-md-4">
+        <div class="mvv-card vision-card">
+          <h2>Visión</h2>
+          <div class="mvv-content">
+            <p>Convertirnos en la plataforma más destacada del mercado en materia de registro de procesos para los próximos tres años.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Valores - Cuadro Naranja -->
+      <div class="col-md-4">
+        <div class="mvv-card valores-card">
+          <h2>Valores</h2>
+          <div class="mvv-content">
+            <ul>
+              <li>Lealtad</li>
+              <li>Seguridad</li>
+              <li>Confianza</li>
+              <li>Productividad</li>
+              <li>Calidad</li>
+              <li>Independencia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Sección de Empresas Clientes -->
+<section id="clientes" class="section py-5" style="background-color: #183952;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="section-title text-white">Algunas de las empresas que registran sus procesos con Room Wise</h2>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center">
+      <!-- Empresa 1 -->
+      <div class="col-md-3 col-6 text-center mb-4">
+        <div class="client-card p-4 bg-white rounded">
+          <div class="client-logo mb-3">
+            <img src="assets/img/campoalegre.png" alt="CAMPOALEGRE" class="img-fluid">
+          </div>
+          <h4 class="client-name text-dark">CAMPOALEGRE</h4>
+        </div>
+      </div>
+      
+      
+
+      <!-- Puedes agregar más empresas aquí -->
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Developers, an intelligent, brave, and funny team, fearlessly tackles challenges with creativity, humor, and innovative solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/omar.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Omar Morales</h4>
+                <span>Executive Team Leader</span>
+                <p>First, solve the problem. Then, write the code.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4></h4>
+                <span>Product Manager</span>
+                <p>Good code is its own best documentation.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/giacomo.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4></h4>
+                <span>CTO</span>
+                <p>Simplicity is the soul of efficiency.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/aaron.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4></h4>
+                <span>Accountant</span>
+                <p>Testing leads to failure, and failure leads to understanding</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400"></div>
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/fernando.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Fernando Salgado</h4>
+                <span>Analyst</span>
+                <p>Programs must be written for people to read, and only incidentally for machines to execute</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+
+    <!-- Sección de Contacto -->
+<section id="contacto" class="section py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="section-title">Contacto</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Formulario de Contacto -->
+      <div class="col-lg-6 mb-4">
+        <div class="contact-form p-4 bg-white rounded shadow-sm">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Número telefónico</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número telefónico">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Déjanos un mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"  style="background-color: #183952 ;">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+     <!-- Información de Contacto -->
+<div class="col-lg-6">
+  <div class="contact-info p-4 rounded shadow-sm h-100" style="background-color: #cbb99d; color: white;">
+    <h4 class="mb-4">Conéctate con nosotros en las redes sociales:</h4>
+    <p class="mb-4">Si lo deseas también puedes contactar con nosotros a través de nuestras redes sociales, donde respondemos dudas y recibimos diferentes sugerencias.</p>
+    
+    <div class="social-links mb-4">
+      <a href="#" class="btn btn-outline-light me-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="btn btn-outline-light me-2"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="btn btn-outline-light me-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="btn btn-outline-light me-2"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <div class="contact-details">
+      <h5 class="mb-3">Información de contacto:</h5>
+      <ul class="list-unstyled">
+        <li class="mb-2"><strong>Room Wise:</strong> info@gmail.com</li>
+        <li class="mb-2"><strong>Teléfono:</strong> +51 999 999 990</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section" style="background-color: #183952;">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" style="color: white;">
+        <h2>ELIGE TU PLAN</h2>
+        <p>Escoge de acuerdo a tus necesidades</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+        <div class="row gy-4">
+    
+          <!-- Plan Básico -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item" style="background-color: #CBB99D;">
+              <h3 style="color: #183952;">BÁSICO</h3>
+              <h4 style="color: #183952;"><sup style="color: #183952;">S/</sup>10<span style="color: #183952;"> / mes</span></h4>
+              <ul style="color: #183952;">
+                <li><i class="bi bi-check" style="color: #183952;"></i> <span>Registrar hasta 5 empleados</span></li>
+                <li><i class="bi bi-check" style="color: #183952;"></i> <span>Registrar hasta 365 cosechas al año</span></li>
+              </ul>
+              <a href="#" class="buy-btn" style="background-color: #183952; color: white;">Comenzar</a>
+            </div>
+          </div><!-- End Pricing Item -->
+    
+          <!-- Plan Regular -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured" style="background-color: white;">
+              <h3 style="color: #183952;">REGULAR</h3>
+              <h4 style="color: #183952;"><sup style="color: #183952;">S/</sup>35.85<span style="color: white;"> / mes</span></h4>
+              <ul style="color: #183952;">
+                <li><i class="bi bi-check" style="color: white;"></i> <span>Registrar hasta 30 empleados</span></li>
+                <li><i class="bi bi-check" style="color: white;"></i> <span>Registrar hasta 720 cosechas al año</span></li>
+              </ul>
+              <a href="#" class="buy-btn" style="background-color: white; color: #8B6341;">Comenzar</a>
+            </div>
+          </div><!-- End Pricing Item -->
+    
+          <!-- Plan Premium -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item" style="background-color: #8B6341; border: 2px solid #CBB99D;">
+              <h3 style="color: white;">PREMIUM</h3>
+              <h4 style="color: white;"><sup style="color: #CBB99D;">S/</sup>67.89<span style="color: #CBB99D;"> / mes</span></h4>
+              <ul style="color: white;">
+                <li><i class="bi bi-check" style="color: #CBB99D;"></i> <span>Registrar empleados ilimitados</span></li>
+                <li><i class="bi bi-check" style="color: #CBB99D;"></i> <span>Registro de cosechas ilimitadas al año</span></li>
+              </ul>
+              <a href="#" class="buy-btn" style="background-color: #CBB99D; color: #183952;">Comenzar</a>
+            </div>
+          </div><!-- End Pricing Item -->
+    
+        </div>
+      </div>
+    </section>
+
+
+    <section id="faq" class="section" style="background-color: #183952; padding: 80px 0; color: white;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 20px;">Preguntas Frecuentes</h2>
+          </div>
+        </div>
+    
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item mb-4" style="background-color: #CBB99D; border-radius: 8px; padding: 20px; transition: all 0.3s ease;">
+              <div class="faq-question d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                <h3 style="font-size: 1.2rem; font-weight: 600; margin: 0; color: black;">
+                  1. ¿Puedo cancelar mi suscripción?
+                </h3>
+                <i class="bi bi-chevron-down" style="color: #CBB99D; transition: transform 0.3s ease;"></i>
+              </div>
+              <div class="faq-answer mt-3" style="display: block;">
+                <p style="margin: 0; color: white;">Sí, puedes cancelar tu suscripción en cualquier momento.</p>
+              </div>
+            </div>
+    
+            <!-- FAQ Item 2 -->
+            <div class="faq-item mb-4" style="background-color: #CBB99D; border-radius: 8px; padding: 20px; transition: all 0.3s ease;">
+              <div class="faq-question d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                <h3 style="font-size: 1.2rem; font-weight: 600; margin: 0; color: black;">
+                  2. ¿Qué métodos de pago aceptan?
+                </h3>
+                <i class="bi bi-chevron-down" style="color: #CBB99D; transition: transform 0.3s ease;"></i>
+              </div>
+              <div class="faq-answer mt-3" style="display: none;">
+                <p style="margin: 0; color: white;">Aceptamos metodos de pago de acuerdo a la comodidad del cliente, como Paypal o con trajeta de crédito o débito</p>
+              </div>
+            </div>
+    
+            <!-- FAQ Item 3 -->
+            <div class="faq-item mb-4" style="background-color: #CBB99D; border-radius: 8px; padding: 20px; transition: all 0.3s ease;">
+              <div class="faq-question d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                <h3 style="font-size: 1.2rem; font-weight: 600; margin: 0; color: black;">
+                  3. ¿Puedo eliminar mi cuenta?
+                </h3>
+                <i class="bi bi-chevron-down" style="color: #CBB99D; transition: transform 0.3s ease;"></i>
+              </div>
+              <div class="faq-answer mt-3" style="display: none;">
+                <p style="margin: 0; color: white;">Si, al eliminar una cuenta no se quedaran registrados tus datos personales ni informacion personal</p>
+              </div>
+            </div>
+    
+            <!-- FAQ Item 4 -->
+            <div class="faq-item mb-4" style="background-color: #CBB99D; border-radius: 8px; padding: 20px; transition: all 0.3s ease;">
+              <div class="faq-question d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                <h3 style="font-size: 1.2rem; font-weight: 600; margin: 0; color: black;">
+                  4. ¿Cuántos empleados puedo registrar?
+                </h3>
+                <i class="bi bi-chevron-down" style="color: #CBB99D; transition: transform 0.3s ease;"></i>
+              </div>
+              <div class="faq-answer mt-3" style="display: none;">
+                <p style="margin: 0; color: white;">La cantidad de empleados que puedas registrar va a depender de tu tipo de suscripcion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer id="footer" class="footer" style="background-color: #8B6341; color: white;">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename" style="font-size: 1.8rem; font-weight: 700;">Room Wise</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <h4 style="font-size: 1.3rem; margin-bottom: 1rem; color: #CBB99D;">Crear cuenta</h4>
+          </div>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 style="color: #CBB99D;">Links de apoyo</h4>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Conoce más</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Beneficios</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Planes</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Valores</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Colaboradores</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Contacto</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">FAQ</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4 style="color: #CBB99D;">Contacto</h4>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 0.5rem;">
+              <i class="bi bi-telephone" style="color: #CBB99D;"></i> 
+              <span style="margin-left: 8px;">+51 999 999 999</span>
+            </li>
+            <li>
+              <i class="bi bi-envelope" style="color: #CBB99D;"></i> 
+              <span style="margin-left: 8px;">Room Wise-info@gmail.com</span>
+            </li>
+          </ul>
+  
+          <h4 class="mt-4" style="color: #CBB99D;">Legal</h4>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><a href="#" style="color: white; text-decoration: none;">Política de Privacidad</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Términos y condiciones</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-3 col-md-12">
+          <h4 style="color: #CBB99D;">Síguenos</h4>
+          <div class="social-links d-flex mt-3">
+            <a href="#" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="bi bi-facebook"></i></a>
+            <a href="#" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="bi bi-instagram"></i></a>
+            <a href="#" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="bi bi-linkedin"></i></a>
+            <a href="#" style="color: white; font-size: 1.5rem;"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container copyright text-center mt-4 pt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
+      <p style="margin-bottom: 0.5rem;">© <span>Copyright</span> <strong class="px-1 sitename">Room Wise</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="#" style="color: #CBB99D; text-decoration: none;">Sweet Solutions</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+!-- JavaScript para funcionalidad FAQ (debe ir antes de cerrar </body>) -->
+<script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector('i');
+      
+      // Toggle answer
+      if(answer.style.display === 'block') {
+        answer.style.display = 'none';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        answer.style.display = 'block';
+        icon.style.transform = 'rotate(180deg)';
+      }
+      
+      // Cerrar otros FAQs
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if(item !== question.parentElement) {
+          item.querySelector('.faq-answer').style.display = 'none';
+          item.querySelector('i').style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  });
+</script>
+
+
+</body>
+
+</html>
