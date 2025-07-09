@@ -6,6 +6,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 */
 (function() {
   'use strict'
+// Este archivo incluye la implementación base de la librería Waypoints v4.0.1,
+// utilizada para detectar cuándo un elemento entra o sale del viewport.
+// Puede ser útil para animaciones al hacer scroll u otras interacciones.
 
   var keyCounter = 0
   var allWaypoints = {}
