@@ -1,33 +1,43 @@
 'use strict';
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+// Helper function to handle module imports, supporting default exports
+function _interopDefault (ex) { 
+    return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; 
+}
 
+// Import lodash.throttle and lodash.debounce with compatibility for default exports
 var throttle = _interopDefault(require('lodash.throttle'));
 var debounce = _interopDefault(require('lodash.debounce'));
 
+// A simple callback function, currently does nothing
 var callback = function callback() {};
 
+// Function to check if any of the given nodes or their descendants contain an element with a 'data-aos' attribute
 function containsAOSNode(nodes) {
-  var i = void 0,
-      currentNode = void 0,
-      result = void 0;
+  var i = void 0,  // Loop variable
+      currentNode = void 0,  // Current node being checked
+      result = void 0;  // Result of the recursive check
 
+  // Iterate through each node in the provided nodes array
   for (i = 0; i < nodes.length; i += 1) {
     currentNode = nodes[i];
 
+    // Check if the current node has a 'data-aos' attribute
     if (currentNode.dataset && currentNode.dataset.aos) {
-      return true;
+      return true; // Return true if the attribute is found
     }
 
+    // Recursively check the children of the current node for 'data-aos'
     result = currentNode.children && containsAOSNode(currentNode.children);
 
     if (result) {
-      return true;
+      return true; // Return true if any child contains the attribute
     }
   }
 
-  return false;
+  return false; // Return false if no node or child contains the attribute
 }
+
 
 function check(mutations) {
   if (!mutations) return;
