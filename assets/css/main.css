@@ -330,22 +330,41 @@ h6 {
     position: static;
   }
 
-  .navmenu .megamenu ul {
+/* Style for the megamenu dropdown list */
+.navmenu .megamenu ul {
+    /* Remove margin and set padding */
     margin: 0;
     padding: 10px;
+    
+    /* Set background color using a CSS variable */
     background: var(--nav-dropdown-background-color);
+    
+    /* Apply a subtle box shadow for a soft elevation effect */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    
+    /* Position the dropdown relative to its parent element */
     position: absolute;
-    top: 130%;
-    left: 0;
-    right: 0;
+    top: 130%;  /* Position the dropdown 130% below the parent */
+    left: 0;    /* Align the left edge with the parent */
+    right: 0;   /* Align the right edge with the parent */
+    
+    /* Hide the dropdown by default (invisible and not interactive) */
     visibility: hidden;
     opacity: 0;
+    
+    /* Use flexbox to align the items inside the dropdown */
     display: flex;
+    
+    /* Smooth transition for visibility and opacity changes */
     transition: 0.3s;
+    
+    /* Rounded corners for the dropdown */
     border-radius: 4px;
+    
+    /* Ensure the dropdown appears above other elements */
     z-index: 99;
-  }
+}
+
 
   .navmenu .megamenu ul li {
     flex: 1;
