@@ -6,6 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
+// Main IIFE (Immediately Invoked Function Expression) to encapsulate all code
 (function() {
   "use strict";
 
